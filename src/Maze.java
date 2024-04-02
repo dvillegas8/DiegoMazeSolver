@@ -3,7 +3,7 @@
  * @author Ms. Namasivayam
  * @version 03/04/2022
  */
-
+// Diego Villegas
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -147,6 +147,10 @@ public class Maze {
      */
     public boolean isValidCell(int row, int col) {
         // TODO: Complete this function
+        // Checks if the cell is valid (out of bounds, is a wall, or it has already been explored)
+        if(row < 0 || row >= numRows || col >= numCols || col < 0 || mazeGrid[row][col].isWall() || mazeGrid[row][col].isExplored()){
+            return false;
+        }
         return true;
     }
 }

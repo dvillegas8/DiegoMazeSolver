@@ -3,7 +3,7 @@
  * @author: Nandhini Namasivayam
  * @version: 03/04/2022
  */
-
+// Diego Villegas
 import java.util.ArrayList;
 
 public class MazeTester {
@@ -38,6 +38,10 @@ public class MazeTester {
         // Get the solution from MazeSolver
         MazeSolver ms = new MazeSolver(maze);
         ArrayList<MazeCell> received = ms.getSolution();
+        for(int i = 0; i < received.size(); i++){
+            System.out.println(received.get(i).getRow() + " " + received.get(i).getCol());
+            System.out.println(received.get(i).isWall());
+        }
 
         // Check if solutions are equal size
         if (received.size() != expected.size()) {

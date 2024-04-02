@@ -3,7 +3,7 @@
  * @author Ms. Namasivayam
  * @version 03/10/2023
  */
-
+// Diego Villegas
 public class MazeCell {
     private boolean explored;
     private boolean isWall;
